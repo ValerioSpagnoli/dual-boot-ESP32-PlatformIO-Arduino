@@ -24,7 +24,7 @@ coredump, data, coredump,,64k,
 
 - ```ota_0```: is the first partition, which starts at the ```0x10000``` address of memory;
 - ```ota_1```: is the second partition, which starts at the ```0x110000``` adress of memory.
-- 
+
 Both the partitions are 1M of memory. Note that **the address depends on the size of the partition**, so be carefull to change both this values in accordance.
 
 
