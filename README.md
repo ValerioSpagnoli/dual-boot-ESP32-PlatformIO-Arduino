@@ -109,12 +109,13 @@ In the ```app.h``` are defined the following macros:
 ## Usage
 ### Clone the repository
 ```
-git clone https://github.com/ValerioSpagnoli/Dual-Boot-ESP32.git
+git clone https://github.com/ValerioSpagnoli/dual-boot-ESP32-PlatformIO-Arduino.git
 ```
 
 ### PlatformIO
 Use the VS Code extention Platformio to setup the project and upload the firmware.
 If the firmware will be uploaded successfully you should see something like that:
+
 <img src="images/upload_success.png" width="300">
 
 
