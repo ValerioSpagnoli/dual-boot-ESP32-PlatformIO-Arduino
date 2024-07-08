@@ -7,6 +7,7 @@ Actually, it is possible to upload more than two applications on the same ESP32.
 
 **Note**: This repository uses the same code for both the partitions, differenciating the functionalities using two macros ```OTA_0``` and ```OTA_1``` defined in the ```platformio.ini```, but it is also possible to upload different files.
 
+
 ## Explanation
 
 ### ```partition.csv```
@@ -26,6 +27,7 @@ coredump, data, coredump,,64k,
 - 
 Both the partitions are 1M of memory. Note that **the address depends on the size of the partition**, so be carefull to change both this values in accordance.
 
+---
 ### ```platformio.ini```
 The ```plaformio.ini``` should be set in the following way:
 
@@ -82,7 +84,7 @@ Using the macros ```OTA_0``` and ```OTA_1``` it is possible to reuse the same co
 Otherwise, it is also possible to upload different files on each partition, using the follwing option in the ```platformio.ini```:
 - ```build_src_filter = +<filename_1> -<filename_2>```
 
-
+---
 ### ```app.h```
 
 In the ```app.h``` are defined the following macros:
@@ -104,7 +106,7 @@ In the ```app.h``` are defined the following macros:
 #define SWITCH_PIN_STATE HIGH
 #endif
 ```
-
+---
 ### ```app.cpp```
 The code used to swith between the two application is the following:
 ```c
