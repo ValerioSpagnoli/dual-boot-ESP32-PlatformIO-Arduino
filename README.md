@@ -144,3 +144,4 @@ If the firmware will be uploaded successfully you should see something like that
 
 ### Run
 Once the firmware is uploaded on the ESP32 open the serial monitor and use a FF jumper to connect and disconnect the ```SWITCH_PARTITION_PIN``` to GND in order to switch between the two applications.
+
